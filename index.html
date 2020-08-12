@@ -4,104 +4,201 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta content="" property="og:title">
+  <meta content="" property="og:type">
+  <meta content="" property="og:url">
+  <meta content="" property="og:image">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link href="site.webmanifest" rel="manifest">
+  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="icon.png" rel="apple-touch-icon">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-  <meta name="theme-color" content="#fafafa">
+  <meta content="#fafafa" name="theme-color">
 </head>
-
 <body>
-
-<!-- Add your site or application content here -->
-<header class="html">
-  <span><span><</span>Alex</span><span>></span><img class="alexpic" src="alex.png"
-                                                    alt="It's me!"><span><span><</span>/</span>Rose</span><span>></span>
-</header>
-<span class="flash"
-      aria-hidden="true">
+<div class="intro">
+  <span>Alex</span>
+  <span>Rose</span>
+</div>
+<span aria-hidden="true"
+      class="flash">
     <span class="flash-item" style="animation-delay: 1s;">You</span>
     <span class="flash-item" style="animation-delay: 1s;">have</span>
-    <span class="flash-item" style="animation-delay: 1s;">managed</span>
-    <span class="flash-item" style="animation-delay: 1s;">to</span>
-    <span class="flash-item" style="animation-delay: 1s;">find</span>
+    <span class="flash-item" style="animation-delay: 1s;">found</span>
     <span class="flash-item" style="animation-delay: 1s;">my</span>
-    <span class="flash-item variable" style="animation-delay: 1s;">Jetbrains</span>
-    <span class="flash-item variable" style="animation-delay: 1s;">inspired</span>
-    <span class="flash-item variable" style="animation-delay: 1s;">site!</span>
+    <span class="flash-item" style="animation-delay: 1s;">site</span>
   </span>
 
-<div class="itisme">
+<div class="about-container">
   <div class="about">
-    <h1 class="class bio">My Bio:</h1>
-    <p>
-      I'm a <span class="variable">junior</span> studying <span class="variable">Computer Science</span> at <span
-      class="variable">Loyola University Chicago</span>.
-    </p>
-    <p>I'm also a <span class="variable">Mulcahy Fellow</span> at the
-      <span class="variable">Software Systems Laboratory</span> and the <span class="variable">VP</span> of <img
-        class="dontpanic"
-        src="https://dontpanic.cs.luc.edu/static/media/logo.3f4df2a9.png" alt=""></p>
-
-    <p>
-      I used to work as a <span class="variable">IT Technician</span> for the <span class="variable">Loyola
-      Service Desk</span> and now I'm looking for another <span class="class">job</span> that's more about <span
-      class="variable">coding</span>.
-    </p>
-    <p>
-      As you can see, I know how to put <span class="html"><</span><span class="html">p></span> <span
-      class="html">tags</span> onto a <span class="htmldoctype">html</span> file! But please check out some of <span
-      class="variable">my stuff</span>. </p>
-    <p>I'm no <span class="domoroboto">Mr. Robot</span>, especially since (spoilers) <span class="spoiler">I don't have Dissociative Identity Disorder</span>,
-      but I try to do an <span class="variable">OK</span> job.
-    </p>
+    <span> I'm a junior studying Computer Science at Loyola University Chicago.</span><br><br><span>I'm also a Mulcahy Fellow at the Software Systems Laboratory and the VP of Don’t Panic</span><br><br><span>I used to work as a IT Technician for the Loyola Service Desk and now I'm looking for another job that's more about coding.</span><br><br><span>As you can see, I know how to put tags onto an html file! </span><br><br><span>But please check out some of my stuff. </span>
   </div>
-  <div class="my-stuff">
-    <h1 class="class">My (coolest) stuff:</h1>
-    <div class="historyofcomputing">
-      <a class="link-stuff" href="https://github.com/acrose99/HistoryOfComputing">The History of Computing:</a>
-      <h4>This is my <span class="variable">website</span>, built with <span class="variable">React</span>, as part of work for the <span class="variable">Software Systems Laboratory</span> and for my <span class="variable">Mulcahy Fellowship</span>, that
-        I'm working on.</h4>
-      <h4 class="description"><span class="class">TLDR</span> without the academic wording: We want to create a <span class="variable">cool website</span> to introduce people to
-        the <span class="variable">historiography</span> of
-        the <span class="variable">History of Computing</span></h4>
-      <a class="link-stuff" href="https://dontpanic.cs.luc.edu/">Don't Panic CS Club:</a>
-      <h4 class="description">
-        <span class="variable">Don't Panic</span> is the main <span class="variable">computer science club</span> of <span class="variable">Loyola University Chicago</span>. We have about <span class="variable">200 members</span>. I am the
-        <span class="variable">VP</span>, which means I do cool <span class="variable">decision making</span>.
-      </h4>
-      <a class="link-stuff" href="https://github.com/acrose99/ramblerfy-client">RamblerFy:</a>
-      <h4 class="description">This is a <span class="variable">site</span> that lets people find <span class="variable">specific songs</span> from <span class="variable">Spotify</span>, using their <span class="variable">REST API</span>, based on <span class="variable">variables</span> like
-        <span class="variable">Valence</span> and
-        <span class="variable">Danceability</span>. It's currently <span class="variable">deprecated</span> because we can't afford <span class="variable">AWS</span>, but you can look at my dope <span class="variable">backend code</span>
-        . </h4>
-      <a class="link-stuff" href="https://github.com/acrose99/Quiz-Shroom">QuizShroom:</a>
-      <h4 class="description">This is a <span class="variable">site</span> that lets people create <span class="variable">quizzes</span>. I did some of the <span class="variable">UI</span> and all the <span class="variable">AWS</span>
-        stuff.</h4>
-      <h4 class="description">Check out <a class="quiz" href="https://github.com/acrose99/Quiz-CLI">Quiz-CLI</a> for a <span class="variable">terminal version</span> written in <span class="variable">Python</span> that works alot better</h4>
-      <a class="link-stuff" href="https://github.com/acrose99/Reddit-Scraper">Reddit Machine Learning:</a>
-      <h4 class="description">I wrote a <span class="variable">Python Scraper</span> in order to predict the <span class="variable">age</span> (Generalized to Gen Z + Millennial's of vs everyone
-        else) of <span class="variable">Reddit users</span> based on their <span class="variable">comments</span>.</h4>
-      <a class="link-stuff" href="https://acrose99.github.io/NavySealCopyPasta/">Navy Seal Copypasta Generator:</a>
-      <h4 class="description">This is easily my <span class="variable">worst</span>, yet <span class="variable">best</span>, creation. This allows people to create their own <span class="variable">Navy
-        Seal Copypasta</span>!</h4>
+
+</div>
+<div class="my-stuff">
+  <div>
+
+  </div>
+  <h1>My <i>(coolest)</i> stuff:</h1>
+  <div>
+    <div class="rectangle">
+      <div class="inner-rectangle-left">
+        <div class="inner-rectangle-svg">
+          <span class="iconify" data-icon="emojione-v1:blue-book" data-inline="false" style="font-size: 64px;"></span>
+        </div>
+      </div>
+      <a class="rectangle-text" href="https://github.com/acrose99/HistoryOfComputing">
+        History of Computing
+      </a>
+      <div class="inner-rectangle-right">
+        <div class="inner-rectangle-svg">
+          <span class="iconify" data-icon="logos:react" data-inline="false" style="font-size: 60px;"></span>
+        </div>
+      </div>
     </div>
+    <div class="article">
+        <span class="description">This is my website, built with React, as part of work for the <a
+          href="https://ssl.cs.luc.edu/">SSL</a> and for my <a
+          href="https://www.luc.edu/cas/academics_mulcahyscholarship.shtml">Mulcahy Fellowship</a>, that I'm working on.</span>
+      <br><br>
+      <span class="description">TLDR without the academic wording: </span>
+      <br><br>
+      <span>We want to create a cool website to introduce people to the historiography of the History of Computing</span>
+    </div>
+  </div>
+  <div>
+    <div class="rectangle">
+      <div class="inner-rectangle-left">
+        <div class="inner-rectangle-svg">
+          <img alt="" class="iconify" src="DP.svg">
+        </div>
+      </div>
+      <a class="rectangle-text" href="https://dontpanic.cs.luc.edu/">
+        Don't Panic
+      </a>
+      <div class="inner-rectangle-right">
+        <div class="inner-rectangle-svg">
+          <span class="iconify" data-icon="logos:discord" data-inline="false" style="font-size: 60px;"></span>
+
+        </div>
+      </div>
+    </div>
+    <div class="article">
+      <span class="description">Don't Panic is the main computer science club of Loyola University Chicago. </span>
+      <br><br>
+      <span>We have about 200 members. I am the VP, which means I do a lot of decision making, and other day to day stuff like editing. </span>
+    </div>
+  </div>
+
+  <div class="portfolio">
+    <div class="rectangle">
+      <div class="inner-rectangle-left">
+        <div class="inner-rectangle-svg">
+            <span class="iconify" data-icon="cib:spotify" data-inline="false"
+                  style="color: #41b883; font-size: 64px;"></span>
+        </div>
+      </div>
+      <a class="rectangle-text" href="https://github.com/acrose99/ramblerfy-client">
+        RamblerFy.com
+      </a>
+      <div class="inner-rectangle-right">
+        <div class="inner-rectangle-svg">
+          <span class="iconify" data-icon="logos:react" data-inline="false" style="font-size: 60px;"></span>
+        </div>
+      </div>
+    </div>
+    <div class="article">
+      <span class="description">This is a site that lets people find specific songs from Spotify.</span>
+      <br><br>
+      <span>Using their REST API, we can filter songs using variables like Valence and Danceability.</span>
+      <br><br>
+      <span>It's currently deprecated because we can't afford AWS, but you can look at my backend code.</span>
+    </div>
+
+    <div>
+      <div class="rectangle">
+        <div class="inner-rectangle-left">
+          <div class="inner-rectangle-svg">
+            <span class="iconify" data-icon="openmoji:mushroom" data-inline="false" style="font-size: 64px;"></span>
+          </div>
+        </div>
+        <a class="rectangle-text" href="https://github.com/acrose99/Quiz-Shroom">
+          Quizshroom
+        </a>
+        <div class="inner-rectangle-right">
+          <div class="inner-rectangle-svg">
+            <span class="iconify" data-icon="logos:vue" data-inline="false" style="font-size: 64px;"></span>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <span class="description">This is a site that lets people create quizzes.</span>
+        <br><br>
+        <span>I did some of the UI and all the AWS stuff.</span>
+        <br><br>
+        <span
+          class="description">Check out Quiz-CLI for a terminal version written in Python that works alot better</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="rectangle">
+        <div class="inner-rectangle-left">
+          <div class="inner-rectangle-svg">
+            <span class="iconify" data-icon="fa-brands:reddit" data-inline="false" style="font-size: 64px;"></span>
+
+          </div>
+        </div>
+        <a class="rectangle-text" href="https://github.com/acrose99/Reddit-Scraper">
+          Reddit Machine Learning
+        </a>
+        <div class="inner-rectangle-right">
+          <div class="inner-rectangle-svg">
+            <span class="iconify" data-icon="logos:python" data-inline="false" style="font-size: 64px;"></span>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <span class="description">I wrote a Python Scraper in order to predict the age of Reddit users based on their comments.</span>
+        <br><br>
+        <span> (Generalized to Gen Z + Millennial's  vs everyone else)</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="rectangle">
+        <div class="inner-rectangle-left">
+          <div class="inner-rectangle-svg">
+            <img alt="" class="iconify" src="sealteamsix.svg">
+          </div>
+        </div>
+        <a class="rectangle-text" href="https://acrose99.github.io/NavySealCopyPasta/">
+          Navy Seal Copypasta
+        </a>
+        <div class="inner-rectangle-right">
+          <div class="inner-rectangle-svg">
+              <span class="iconify" data-icon="la:js-square" data-inline="false"
+                    style="color: #ffe052; font-size: 64px;"></span>
+          </div>
+        </div>
+      </div>
+      <div class="article">
+        <span class="description">This is one of my favorite creations, it lets people make their own Navy Seal Copypasta easier.</span>
+        <br><br>
+        <span>If you dont know about this classic internet meme please be aware it has <span class="adult">ADULT LANGUAGE</span></span>
+      </div>
+    </div>
+
     <div class="contact">
       <li class="list">
-        <a href="https://github.com/acrose99" class="list">Github</a>
-        <a href="https://www.linkedin.com/in/alexander-r-5a14b0118/" class="list">LinkedIn</a>
-        <a href="https://www.material-theme.com/docs/introduction/" class="list">CSS Inspiration/Material Deep Ocean</a>
+        <a class="list" href="https://github.com/acrose99">Github</a>
+        <a class="list" href="https://www.linkedin.com/in/alexander-r-5a14b0118/">LinkedIn</a>
       </li>
     </div>
   </div>
@@ -110,7 +207,7 @@
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 
 </body>
-
 </html>

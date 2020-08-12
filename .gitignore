@@ -4,3 +4,10 @@
 node_modules
 dist
 .cache
+.htaccess
+browserconfig.xml
+humans.txt
+robots.txt
+site.webmanifest
+doc
+.idea

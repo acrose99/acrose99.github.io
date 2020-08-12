@@ -3,55 +3,59 @@ body {
   text-align: center;
   background: #0f111a;
 }
-.flash-item {
+
+/*Each rectangle is a diffrent thing I've done. It is centered and uses flex to display rectangles inside the rectangle.*/
+.rectangle {
+  height: 70px;
+  margin: auto;
+  display: flex;
+  width: 600px;
+  background-color: #8f93a2;
+  color: #000000;
+}
+
+/* The text of each rectangle */
+.rectangle-text {
+  width: 80%;
+  margin-top: 3%;
   font-size: 24px;
-  animation: flash 8s linear 0s infinite;
-  color: #8f93a2;
-  -webkit-animation: flash 8s linear 0s infinite;
-  -moz-animation: flash 8s linear 0s infinite;
-  animation-delay: 0s;
-  -o-animation: flash 8s linear 0s infinite;
-}
-.html {
-  color: #F07178;
-}
-.spoiler{
-  color: black;
-  background-color:black;
 }
 
-.spoiler:hover{
-  color: #8f93a2;
+/* The frame for the left vector (logo) */
+.inner-rectangle-left {
+  flex-grow: 1;
+  background-color: #c4c4c4;
+  margin-right: auto;
+  position: relative;
+  box-sizing: border-box;
+  pointer-events: auto;
 }
 
-.class {
-  color: #FFCB6B;
+/* The frame for the right vector (Stack/Language) */
+.inner-rectangle-right {
+  flex-grow: 1;
+  background-color: #c4c4c4;
+  position: relative;
+  box-sizing: border-box;
+  pointer-events: auto;
 }
-.my-stuff {
-  margin-top: 40px;
-  color: #8f93a2 ;
+
+/* The styling for the vectors, margin makes it loom slightly better */
+.inner-rectangle-svg {
+  flex-grow: 1;
+  overflow: hidden;
+  margin-top: 5%;
 }
-.description {
-  font-size: 15px;
+
+/* Margins for the texts below each rectangle */
+.article {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  text-align: center;
 }
-.htmldoctype {
-  color: #89DDFF
-}
-.domoroboto {
-  font-family: MrRobot, serif;
-  color: #d12026;
-  font-size: 15px;
-}
-.variable {
-  color: #C792EA;
-}
-.dontpanic {
-  height: 60px;
-}
-img {
-  height: 100px;
-  width: 100px;
-}
+
+
+/* Flash animation */
 @keyframes flash {
   0% {
     opacity: 1;
@@ -63,6 +67,7 @@ img {
     opacity: 1;
   }
 }
+
 @-webkit-keyframes flash {
   0% {
     opacity: 1;
@@ -74,6 +79,7 @@ img {
     opacity: 1;
   }
 }
+
 @-moz-keyframes flash {
   0% {
     opacity: 1;
@@ -85,6 +91,7 @@ img {
     opacity: 1;
   }
 }
+
 @-o-keyframes flash {
   0% {
     opacity: 1;
@@ -97,27 +104,72 @@ img {
   }
 }
 
+.flash-item {
+  font-size: 24px;
+  animation: flash 8s linear 0s infinite;
+  color: #8f93a2;
+  -webkit-animation: flash 8s linear 0s infinite;
+  -moz-animation: flash 8s linear 0s infinite;
+  animation-delay: 0s;
+  -o-animation: flash 8s linear 0s infinite;
+}
 
-header {
+/*My name/Header*/
+.intro {
+  color: #8f93a2;
   text-align: center;
   font-size: 50px;
   margin-bottom: 40px;
-
 }
-.itisme {
+
+/* Sets the size for each vector */
+.iconify {
+  height: 64px;
+  width: 64px;
+  margin: 2px;
+}
+
+/* Container for my portfolio/stuff */
+.my-stuff {
+  margin-top: 40px;
+  color: #8f93a2;
+}
+
+/* Styling for the text below each rectangle in the portfolio */
+.description {
+  font-size: 15px;
+  text-align: center;
+  white-space: normal;
+  text-indent: 500px;
+}
+
+.adult {
+  color: red;
+}
+
+/* The box of the bio, centers it, IDK why but using two divs works better. */
+.about-container {
   box-sizing: border-box;
   width: 650px;
   margin: 40px auto;
 }
+
+/* The text of the bio */
 .about {
   text-align: center;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 12px;
   margin-top: 40px;
+  margin-left: 25px;
+  width: 600px;
+  margin-bottom: 50px;
+  height: 200px;
+  background-color: #8f93a2;
+  color: black;
+
 }
-.bio {
-  font-size: 32px;
-}
+
+/* Styling for the bottom contact links */
 .list {
   list-style: none;
   margin-top: 50px;
@@ -126,18 +178,24 @@ header {
   font-size: 14px;
   color: #89DDF7;
 }
-.link-stuff {
-  font-size: 24px;
-  color: #82AAFF;
-}
-.quiz {
-  color: #89DDF7;
-}
-p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  color: #8f93a2;
-}
+
+
+/* Working on a mobile version */
+
+/*@media only screen and (max-width: 375px) {*/
+/*  header>span {*/
+/*    width: 45%;*/
+/*    font-size: 30px;*/
+/*  }*/
+/*  .flash>.flash-item {*/
+/*    width: 45%;*/
+/*    width: 45%;*/
+/*    font-size: 18px;*/
+/*  }*/
+/*  .itisme>div  {*/
+/*    width: 45%;*/
+/*  }*/
+
 
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
