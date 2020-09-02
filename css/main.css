@@ -1,3 +1,72 @@
+/*Galaxy S9+ and Android*/
+@media screen and (min-width: 360px) {
+  .rectangle {
+    width: 300px;
+    height: 90px;
+  }
+
+  .rectangle-text {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+}
+
+/*iPhone 6,7,8, X*/
+@media screen and (min-width: 375px) {
+  .rectangle {
+    width: 320px;
+    height: 90px;
+  }
+
+  .rectangle-text {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+}
+
+/*iPhone Plus, XS, XS Max */
+@media screen and (min-width: 414px) {
+  .rectangle {
+    width: 380px;
+    height: 90px;
+  }
+
+  .rectangle-text {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+
+}
+
+/* iPad */
+@media screen and (min-width: 768px) {
+  .rectangle {
+    width: 650px;
+    height: 80px;
+  }
+
+  .rectangle-text {
+    font-size: 24px;
+    width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .rectangle {
+    width: 900px;
+    height: 80px;
+  }
+
+  .rectangle-text {
+    font-size: 24px;
+    width: 80%;
+  }
+}
+
+
 body {
   font-family: Hack, sans-serif;
   text-align: center;
@@ -6,24 +75,18 @@ body {
 
 /*Each rectangle is a diffrent thing I've done. It is centered and uses flex to display rectangles inside the rectangle.*/
 .rectangle {
-  height: 70px;
+  /*height: 70px;*/
   margin: auto;
   display: flex;
-  width: 600px;
+  /*width: 600px;*/
   background-color: #8f93a2;
   color: #000000;
 }
 
-/*.rectangle:hover {*/
-/*  background-color: #8C98C7;;*/
-/*  transition: all 1.3s ease;*/
-/*}*/
-
 /* The text of each rectangle */
 .rectangle-text {
   width: 80%;
-  margin-top: 3%;
-  font-size: 24px;
+  /*font-size: 24px;*/
   color: #0f111a;
 }
 
@@ -58,6 +121,74 @@ body {
   margin-top: 15px;
   margin-bottom: 50px;
   text-align: center;
+}
+
+
+
+/*My name/Header*/
+.intro {
+  color: #8f93a2;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+/* Sets the size for each vector */
+.iconify {
+  height: 64px;
+  width: 64px;
+  margin: 2px;
+}
+
+/* Container for my portfolio/stuff */
+.my-stuff {
+  margin-top: 40px;
+  color: #8f93a2;
+}
+
+/* Styling for the text below each rectangle in the portfolio */
+.description {
+  font-size: 15px;
+  text-align: center;
+  white-space: normal;
+  text-indent: 500px;
+}
+
+.adult {
+  color: red;
+}
+
+/* The box of the bio, centers it, IDK why but using two divs works better. */
+.about-container {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 40px auto;
+}
+
+/* The text of the bio */
+.about {
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 40px auto;
+  /*margin-left: 25px;*/
+  width: 80%;
+  /*background-color: #8f93a2;*/
+  color: #8f93a2;
+}
+
+/* Styling for the bottom contact links */
+.list {
+  list-style: none;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  color: #89DDF7;
+}
+
+#reddit {
+  color: #ec5428;
 }
 
 
@@ -119,92 +250,6 @@ body {
   animation-delay: 0s;
   -o-animation: flash 3s linear 0s infinite;
 }
-
-/*My name/Header*/
-.intro {
-  color: #8f93a2;
-  text-align: center;
-  font-size: 50px;
-  margin-bottom: 40px;
-}
-
-/* Sets the size for each vector */
-.iconify {
-  height: 64px;
-  width: 64px;
-  margin: 2px;
-}
-
-/* Container for my portfolio/stuff */
-.my-stuff {
-  margin-top: 40px;
-  color: #8f93a2;
-}
-
-/* Styling for the text below each rectangle in the portfolio */
-.description {
-  font-size: 15px;
-  text-align: center;
-  white-space: normal;
-  text-indent: 500px;
-}
-
-.adult {
-  color: red;
-}
-
-/* The box of the bio, centers it, IDK why but using two divs works better. */
-.about-container {
-  box-sizing: border-box;
-  width: 650px;
-  margin: 40px auto;
-}
-
-/* The text of the bio */
-.about {
-  text-align: center;
-  font-weight: normal;
-  font-size: 12px;
-  margin-top: 40px;
-  margin-left: 25px;
-  width: 600px;
-  margin-bottom: 50px;
-  height: 200px;
-  /*background-color: #8f93a2;*/
-  color: #8f93a2;
-}
-
-/* Styling for the bottom contact links */
-.list {
-  list-style: none;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 14px;
-  color: #89DDF7;
-}
-
-#reddit {
-  color: #ec5428;
-}
-
-
-/* Working on a mobile version */
-
-/*@media only screen and (max-width: 375px) {*/
-/*  header>span {*/
-/*    width: 45%;*/
-/*    font-size: 30px;*/
-/*  }*/
-/*  .flash>.flash-item {*/
-/*    width: 45%;*/
-/*    width: 45%;*/
-/*    font-size: 18px;*/
-/*  }*/
-/*  .itisme>div  {*/
-/*    width: 45%;*/
-/*  }*/
-
 
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 

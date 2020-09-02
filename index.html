@@ -22,20 +22,20 @@
   <meta content="#fafafa" name="theme-color">
 </head>
 <body>
-<div class="intro">
+<header class="intro">
   <span>Alex</span>
   <span>Rose</span>
-</div>
-<span aria-hidden="true"
-      class="flash">
-    <span class="flash-item" style="animation-delay: 1s;">You</span>
-    <span class="flash-item" style="animation-delay: 1s;">have</span>
-    <span class="flash-item" style="animation-delay: 1s;">found</span>
-    <span class="flash-item" style="animation-delay: 1s;">my</span>
-    <span class="flash-item" style="animation-delay: 1s;">site</span>
-  </span>
+</header>
+<section aria-hidden="true"
+         class="flash">
+  <span class="flash-item" style="animation-delay: 1s;">You</span>
+  <span class="flash-item" style="animation-delay: 1s;">have</span>
+  <span class="flash-item" style="animation-delay: 1s;">found</span>
+  <span class="flash-item" style="animation-delay: 1s;">my</span>
+  <span class="flash-item" style="animation-delay: 1s;">site</span>
+</section>
 
-<div class="about-container">
+<section class="about-container">
   <div class="about">
     <h3> I'm a junior studying Computer Science at Loyola University Chicago.</h3>
     <h3>I'm also a Mulcahy Fellow at the Software Systems Laboratory and the VP of Don’t Panic</h3>
@@ -45,13 +45,10 @@
     <h3>But please check out some of my stuff. </h3>
   </div>
 
-</div>
-<div class="my-stuff">
-  <div>
-
-  </div>
+</section>
+<section class="my-stuff">
   <h1>My <i>(coolest)</i> stuff:</h1>
-  <div>
+  <article>
     <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
       <div class="inner-rectangle-left">
         <div class="inner-rectangle-svg">
@@ -76,8 +73,8 @@
       <br><br>
       <span>We want to create a cool website to introduce people to the historiography of the History of Computing</span>
     </div>
-  </div>
-  <div>
+  </article>
+  <article>
     <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
       <div class="inner-rectangle-left">
         <div class="inner-rectangle-svg">
@@ -102,20 +99,18 @@
       <br>
       <span>I also do  other day to day stuff like sending out emails and organizing meetings </span>
     </div>
-  </div>
-
-  <div class="portfolio">
-    <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
-      <div class="inner-rectangle-left">
-        <div class="inner-rectangle-svg">
+  </article>
+  <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
+    <div class="inner-rectangle-left">
+      <div class="inner-rectangle-svg">
             <span class="iconify" data-icon="cib:spotify" data-inline="false"
                   style="color: #41b883; font-size: 64px;"></span>
-        </div>
       </div>
-      <a class="rectangle-text" href="https://github.com/acrose99/ramblerfy-client">
-        RamblerFy.com
-      </a>
-      <div class="inner-rectangle-right">
+    </div>
+    <a class="rectangle-text" href="https://github.com/acrose99/ramblerfy-client">
+      RamblerFy.com
+    </a>
+    <div class="inner-rectangle-right">
         <div class="inner-rectangle-svg">
           <span class="iconify" data-icon="logos:react" data-inline="false" style="font-size: 60px;"></span>
         </div>
@@ -180,38 +175,38 @@
       </div>
     </div>
 
-    <div>
-      <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
-        <div class="inner-rectangle-left">
-          <div class="inner-rectangle-svg">
-            <img alt="" class="iconify" src="sealteamsix.svg">
-          </div>
+  <article>
+    <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
+      <div class="inner-rectangle-left">
+        <div class="inner-rectangle-svg">
+          <img alt="" class="iconify" src="sealteamsix.svg">
         </div>
-        <a class="rectangle-text" href="https://acrose99.github.io/NavySealCopyPasta/">
-          Navy Seal Copypasta
-        </a>
-        <div class="inner-rectangle-right">
+      </div>
+      <a class="rectangle-text" href="https://acrose99.github.io/NavySealCopyPasta/">
+        Navy Seal Copypasta
+      </a>
+      <div class="inner-rectangle-right">
           <div class="inner-rectangle-svg">
               <span class="iconify" data-icon="la:js-square" data-inline="false"
                     style="color: #ffe052; font-size: 64px;"></span>
           </div>
-        </div>
-      </div>
-      <div class="article">
-        <span class="description">This is one of my favorite creations, it lets people make their own Navy Seal Copypasta easier.</span>
-        <br><br>
-        <span>If you dont know about this classic internet meme please be aware it has <span class="adult">ADULT LANGUAGE</span></span>
       </div>
     </div>
+    <div class="article">
+      <span class="description">This is one of my favorite creations, it lets people make their own Navy Seal Copypasta easier.</span>
+      <br><br>
+      <span>If you dont know about this classic internet meme please be aware it has <span
+        class="adult">ADULT LANGUAGE</span></span>
+    </div>
+  </article>
 
-    <div class="contact">
-      <li class="list">
-        <a class="list" href="https://github.com/acrose99">Github</a>
-        <a class="list" href="https://www.linkedin.com/in/alexander-r-5a14b0118/">LinkedIn</a>
-      </li>
-    </div>
-  </div>
-</div>
+  <footer class="contact">
+    <li class="list">
+      <a class="list" href="https://github.com/acrose99">Github</a>
+      <a class="list" href="https://www.linkedin.com/in/alexander-r-5a14b0118/">LinkedIn</a>
+    </li>
+  </footer>
+</section>
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="js/plugins.js"></script>
