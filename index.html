@@ -52,7 +52,7 @@
   </div>
   <h1>My <i>(coolest)</i> stuff:</h1>
   <div>
-    <div class="rectangle">
+    <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
       <div class="inner-rectangle-left">
         <div class="inner-rectangle-svg">
           <span class="iconify" data-icon="emojione-v1:blue-book" data-inline="false" style="font-size: 64px;"></span>
@@ -78,7 +78,7 @@
     </div>
   </div>
   <div>
-    <div class="rectangle">
+    <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
       <div class="inner-rectangle-left">
         <div class="inner-rectangle-svg">
           <img alt="" class="iconify" src="DP.svg">
@@ -105,7 +105,7 @@
   </div>
 
   <div class="portfolio">
-    <div class="rectangle">
+    <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
       <div class="inner-rectangle-left">
         <div class="inner-rectangle-svg">
             <span class="iconify" data-icon="cib:spotify" data-inline="false"
@@ -130,7 +130,7 @@
     </div>
 
     <div>
-      <div class="rectangle">
+      <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
         <div class="inner-rectangle-left">
           <div class="inner-rectangle-svg">
             <span class="iconify" data-icon="openmoji:mushroom" data-inline="false" style="font-size: 64px;"></span>
@@ -156,10 +156,11 @@
     </div>
 
     <div>
-      <div class="rectangle">
+      <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
         <div class="inner-rectangle-left">
           <div class="inner-rectangle-svg">
-            <span class="iconify" data-icon="fa-brands:reddit" data-inline="false" style="font-size: 64px;"></span>
+            <span class="iconify" data-icon="fa-brands:reddit" data-inline="false" id="reddit"
+                  style="font-size: 64px;"></span>
 
           </div>
         </div>
@@ -180,7 +181,7 @@
     </div>
 
     <div>
-      <div class="rectangle">
+      <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
         <div class="inner-rectangle-left">
           <div class="inner-rectangle-svg">
             <img alt="" class="iconify" src="sealteamsix.svg">
@@ -216,6 +217,36 @@
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+<script>
+  function hoverArticle(rectangle) {
+    rectangle.style.transition = "all 1.3s ease"
+    rectangle.style.backgroundColor = "#374062"
+
+    let innerRectangleLeft = rectangle.childNodes[1]
+    let innerRectangleRight = rectangle.childNodes[5]
+
+    innerRectangleLeft.style.transition = "all 2.0s ease"
+    innerRectangleLeft.style.backgroundColor = "black"
+
+    innerRectangleRight.style.transition = "all 2.0s ease"
+    innerRectangleRight.style.backgroundColor = "black"
+  }
+
+  function hoverOut(rectangle) {
+    rectangle.style.transition = "all 1.3s ease"
+    rectangle.style.backgroundColor = "#8f93a2"
+
+    let innerRectangleLeft = rectangle.childNodes[1]
+    let innerRectangleRight = rectangle.childNodes[5]
+
+    innerRectangleLeft.style.transition = "all 2.0s ease"
+    innerRectangleLeft.style.backgroundColor = "#c4c4c4"
+
+    innerRectangleRight.style.transition = "all 2.0s ease"
+    innerRectangleRight.style.backgroundColor = "#c4c4c4"
+  }
+</script>
 
 </body>
 </html>

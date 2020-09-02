@@ -14,11 +14,17 @@ body {
   color: #000000;
 }
 
+/*.rectangle:hover {*/
+/*  background-color: #8C98C7;;*/
+/*  transition: all 1.3s ease;*/
+/*}*/
+
 /* The text of each rectangle */
 .rectangle-text {
   width: 80%;
   margin-top: 3%;
   font-size: 24px;
+  color: #0f111a;
 }
 
 /* The frame for the left vector (logo) */
@@ -164,9 +170,8 @@ body {
   width: 600px;
   margin-bottom: 50px;
   height: 200px;
-  background-color: #8f93a2;
-  color: black;
-
+  /*background-color: #8f93a2;*/
+  color: #8f93a2;
 }
 
 /* Styling for the bottom contact links */
@@ -177,6 +182,10 @@ body {
   margin-right: 20px;
   font-size: 14px;
   color: #89DDF7;
+}
+
+#reddit {
+  color: #ec5428;
 }
 
 
