@@ -12,3 +12,4 @@ site.webmanifest
 doc
 .idea
 .gitattributes
+/doc/
