@@ -191,6 +191,23 @@ body {
   color: #ec5428;
 }
 
+#discordContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#discordLogo {
+  color: #00d8ff;
+  height: 40px;
+  width: 40px;
+}
+
+#discord-join {
+  font-size: 12px;
+  text-decoration: none;
+  color: #8f93a2;
+}
+
 
 /* Flash animation */
 @keyframes flash {
