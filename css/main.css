@@ -258,7 +258,7 @@ body {
 }
 
 .flash-item {
-  font-size: 24px;
+  /*font-size: 24px;*/
   animation: flash 8s linear 0s infinite;
   color: #8f93a2;
   -webkit-animation: flash 3s linear 0s infinite;
