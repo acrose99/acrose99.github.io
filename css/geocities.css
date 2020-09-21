@@ -1,0 +1,27 @@
+body {
+  background-image: url("../tile.jpg");
+  color: red;
+  text-align: center;
+  margin-top: 50px;
+}
+.underconstruction {
+  display: flex;
+  margin-top: 50px;
+}
+.coffee {
+  width: 200px;
+}
+.joke {
+  color: #ffe052;
+}
+.music {
+  height: 200px;
+}
+
+.frog {
+  width: 60px;
+  height: 100px;
+}
+a {
+  color: dodgerblue;
+}
