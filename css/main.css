@@ -204,7 +204,7 @@ body {
 #discord-join {
   font-size: 12px;
   text-decoration: none;
-  color: #8f93a2;
+  color: black;
 }
 
 
@@ -266,7 +266,9 @@ body {
   animation-delay: 0s;
   -o-animation: flash 3s linear 0s infinite;
 }
-
+a {
+  color: white;
+}
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
