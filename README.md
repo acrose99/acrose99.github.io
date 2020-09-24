@@ -10,5 +10,10 @@ This site currently serves two purposes.
 	* Which was an experiment on how *not* to design a webpage
 3. Implemented WCAG compatibility.
 	* *As far as I am aware*,  I should pass an audit. However I cannot afford to actually spend one. Despite this, I’m continually testing the site based on the guidelines here: https://moritzgiessmann.de/accessibility-cheatsheet/
+  
+#### I'm happy to say this means I get good automated scoring:
+
+<img width="1165" alt="image" src="https://user-images.githubusercontent.com/29925867/94175192-dcfe9a00-fe85-11ea-991f-57c7b015ed07.png">
+
 
 I’ll do something else soon! 
