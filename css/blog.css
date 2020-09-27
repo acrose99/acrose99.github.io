@@ -1,0 +1,26 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+  background: #0f111a;
+  color: #c4c4c4;
+  margin: 25px;
+}
+p {
+  font-size: 20px;
+}
+a {
+  color: white;
+}
+ul {
+  text-align: left;
+}
+h1, h2, h3, h4, h5 {
+  color: #4c68cb;
+}
+
+img {
+  width: 70%;
+  height: 50%;
+  margin: 25px;
+
+}
