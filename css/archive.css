@@ -277,7 +277,7 @@
   height: 50px;
   display: flex;
   justify-content: left;
-  position: sticky;
+  position: fixed;
 }
 
 body {
