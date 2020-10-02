@@ -1,3 +1,5 @@
+
+
 /*Galaxy S9+ and Android*/
 @media screen and (min-width: 360px) {
   .rectangle {
@@ -8,52 +10,6 @@
   .rectangle-text {
     font-size: 20px;
     margin-top: 25px;
-  }
-  .icon {
-    position: absolute;
-    /* exact values here depend on what you are placing inside the items (icon, image, text, etc.) */
-    right: 15%;
-    top: 30%;
-    /* make sure it it rotated enough; angle of rotation = angle of the sector itself */
-    transform: rotate(60deg);
-
-    /* style further as needed */
-    color: #000000;
-    font-family: Futura, sans-serif;
-    font-size: 13px;
-  }
-  #icon-1 {
-    right: 0;
-    font-family: Futura, sans-serif;
-    font-size: .5rem;
-  }
-  #icon-2 {
-    right: 15%;
-    font-family: Futura, sans-serif;
-    font-size: 13px;
-  }
-  #icon-3 {
-    right: 15%;
-    font-family: Futura, sans-serif;
-    font-size: 16px;
-  }
-  #icon-4 {
-    right: 10%;
-    font-family: Futura, sans-serif;
-    font-size: 16px;
-    transform: rotate(150deg);
-  }
-  #icon-5{
-    right: 15%;
-    font-family: Futura, sans-serif;
-    font-size: 18px;
-    transform: rotate(240deg);
-  }
-  #icon-6{
-    right: 15%;
-    font-family: Futura, sans-serif;
-    font-size: 16px;
-    transform: rotate(240deg);
   }
 
 }
@@ -86,7 +42,7 @@
   #icon-1 {
     right: 0;
     font-family: Futura, sans-serif;
-    font-size: .5rem;
+    font-size: .7rem;
   }
   #icon-2 {
     right: 15%;
@@ -152,7 +108,7 @@
   #icon-1 {
     right: 0;
     font-family: Futura, sans-serif;
-    font-size: .6rem;
+    font-size: .8rem;
   }
   #icon-2 {
     right: 15%;
@@ -219,7 +175,7 @@
   #icon-1 {
     right: 0;
     font-family: Futura, sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   #icon-2 {
     right: 15%;
@@ -317,6 +273,12 @@
   }
 }
 
+#home {
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  position: sticky;
+}
 
 body {
   font-family: Hack, sans-serif;
@@ -331,7 +293,7 @@ body {
   margin: auto;
   display: flex;
   /*width: 600px;*/
-  background-color: #8f93a2;
+  background: #24164D;
   color: #000000;
 }
 
@@ -339,23 +301,31 @@ body {
 .rectangle-text {
   width: 80%;
   /*font-size: 24px;*/
-  color: #0f111a;
+  color: #ffffff;
 }
 
 /* The frame for the left vector (logo) */
 .inner-rectangle-left {
   flex-grow: 1;
-  background-color: #c4c4c4;
+  background: #423FBD;
   margin-right: auto;
   position: relative;
   box-sizing: border-box;
   pointer-events: auto;
 }
+.classification {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.1rem;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 /* The frame for the right vector (Stack/Language) */
 .inner-rectangle-right {
   flex-grow: 1;
-  background-color: #c4c4c4;
+  background: #423FBD;
   position: relative;
   box-sizing: border-box;
   pointer-events: auto;
@@ -369,20 +339,34 @@ body {
 }
 
 /* Margins for the texts below each rectangle */
-.article {
-  margin-top: 15px;
+.articleDescription {
+  margin-top: 25px;
   margin-bottom: 50px;
   text-align: center;
+  font-size: 1.5rem;
+  font-family: "Helvetica Neue", sans-serif;
+  font-style: italic;
+  color: #8FA7FF;
 }
 
 
 
 /*My name/Header*/
 .intro {
-  color: #8f93a2;
+  color: #8A88DD;
+  text-shadow: 0px 2px 2px #00D1FF;
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
   margin-bottom: 40px;
+}
+.intro-description {
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
+
+  color: #8A88DD;
+}
+#chest {
+  height: 150px;
 }
 
 /* Sets the size for each vector */
@@ -512,7 +496,7 @@ body {
 .flash-item {
   /*font-size: 24px;*/
   animation: flash 8s linear 0s infinite;
-  color: #8f93a2;
+  color: #8A88DD;
   -webkit-animation: flash 3s linear 0s infinite;
   -moz-animation: flash 3s linear 0s infinite;
   animation-delay: 2s;
@@ -533,8 +517,8 @@ a {
 
   /* padding trick for maintaining aspect ratio */
   height: 0;
-  padding: 45% 0 0;
-  width: 45%;
+  padding: 60% 0 0;
+  width: 60%;
 }
 .menu li {
   position: absolute;

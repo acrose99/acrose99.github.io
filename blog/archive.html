@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js" lang="en" xml:lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Alex Rose's Website</title>
+  <meta content="" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <meta content="" property="og:title">
+  <meta content="" property="og:type">
+  <meta content="" property="og:url">
+  <meta content="" property="og:image">
+
+  <link href="site.webmanifest" rel="manifest">
+  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="icon.png" rel="apple-touch-icon">
+
+  <link href="../css/normalize.css" rel="stylesheet">
+  <link href="../css/archive.css" rel="stylesheet">
+
+  <meta content="#fafafa" name="theme-color">
+</head>
+<body>
+<section>
+  <a href="../index.html">
+    <img alt="Link to homepage" id="home" src="../img/Home.png">
+  </a>
+</section>
+<header class="intro">
+  The Archive
+</header>
+<section>
+  <img alt="" id="chest" src="../img/Chest.png">
+</section>
+<section class="my-stuff">
+  <h1 class="flash-item">Here are all of the things I’ve written, sorted by date:</h1>
+  <article>
+    <div class="rectangle" onmouseout="hoverOut(this)" onmouseover="hoverArticle(this)">
+      <div class="inner-rectangle-left">
+        <div class="inner-rectangle-svg">
+          <p class="classification">General</p>
+        </div>
+      </div>
+      <a class="rectangle-text" href="Soul-Aesthetic.html">
+        The Soul Aesthetic
+      </a>
+      <div class="inner-rectangle-right">
+        <div class="inner-rectangle-svg">
+          <p class="classification">9/28/20</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="articleDescription">A quick primer about the soul aesthetic, and some of my favorite examples. </p>
+    </div>
+  </article>
+  <footer class="contact">
+    <div class="list">
+      <a class="list" href="https://github.com/acrose99">Github</a>
+      <a class="list" href="https://www.linkedin.com/in/alexander-r-5a14b0118/">LinkedIn</a>
+      <a class="list" href="../img/crappyversion.html">YOU FOUND MY EASTER EGG</a>
+    </div>
+  </footer>
+</section>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+<script>
+  function hoverArticle(rectangle) {
+    rectangle.style.transition = "all 1.3s ease"
+    rectangle.style.backgroundColor = "#000000"
+
+    let innerRectangleLeft = rectangle.childNodes[1]
+    let innerRectangleRight = rectangle.childNodes[5]
+
+    innerRectangleLeft.style.transition = "all 2.0s ease"
+    innerRectangleLeft.style.backgroundColor = "#253263"
+
+    innerRectangleRight.style.transition = "all 2.0s ease"
+    innerRectangleRight.style.backgroundColor = "#253263"
+  }
+
+  function hoverOut(rectangle) {
+    rectangle.style.transition = "all 1.3s ease"
+    rectangle.style.backgroundColor = "#24164D"
+
+    let innerRectangleLeft = rectangle.childNodes[1]
+    let innerRectangleRight = rectangle.childNodes[5]
+
+    innerRectangleLeft.style.transition = "all 2.0s ease"
+    innerRectangleLeft.style.backgroundColor = "#423FBD"
+
+    innerRectangleRight.style.transition = "all 2.0s ease"
+    innerRectangleRight.style.backgroundColor = "#423FBD"
+  }
+
+  function hoverBlog(rectangle) {
+    rectangle.style.transition = "all .5s ease"
+    // rectangle.style.backgroundColor = "#374062"
+
+    let innerRectangleLeft = rectangle.childNodes[1]
+
+    innerRectangleLeft.style.transition = "all 2.0s ease"
+    innerRectangleLeft.style.backgroundColor = "black"
+
+
+  }
+
+  function hoverOutBlog(rectangle) {
+    rectangle.style.transition = "all .5s ease"
+    // rectangle.style.backgroundColor = "#8f93a2"
+
+    let innerRectangleLeft = rectangle.childNodes[1]
+
+    innerRectangleLeft.style.transition = "all 2.0s ease"
+    innerRectangleLeft.style.backgroundColor = "#c4c4c4"
+
+  }
+</script>
+
+</body>
+</html>
