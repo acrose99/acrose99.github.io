@@ -1,10 +1,17 @@
 /*Galaxy S9+ and Android*/
 @media screen and (min-width: 360px) {
+  .iconify-Stack  {
+    height: 30px;
+    width: 40px;
+  }
+  .stack-rectangle {
+    width: 300px;
+    height: 90px;
+  }
   .rectangle {
     width: 300px;
     height: 90px;
   }
-
   .rectangle-text {
     font-size: 20px;
     margin-top: 25px;
@@ -60,11 +67,22 @@
 
 /*iPhone 6,7,8, X*/
 @media screen and (min-width: 375px) {
+  .iconify-Stack  {
+    height: 30px;
+    width: 40px;
+  }
+  .stack-rectangle {
+    width: 300px;
+    height: 90px;
+  }
   .rectangle {
     width: 320px;
     height: 90px;
   }
-
+  .stack-rectangle {
+    width: 300px;
+    height: 90px;
+  }
   .rectangle-text {
     font-size: 20px;
     margin-top: 25px;
@@ -120,6 +138,14 @@
 
 /*iPhone Plus, XS, XS Max */
 @media screen and (min-width: 414px) {
+  .iconify-Stack  {
+    height: 30px;
+    width: 40px;
+  }
+  .stack-rectangle {
+    width: 300px;
+    height: 90px;
+  }
   .rectangle {
     width: 380px;
     height: 90px;
@@ -187,11 +213,20 @@
 
 /* iPad */
 @media screen and (min-width: 768px) {
-  .rectangle {
+
+  .iconify-Stack  {
+    height: 64px;
+    width: 64px;
+  }
+  .stack-rectangle {
     width: 650px;
     height: 80px;
   }
 
+  .rectangle {
+    width: 650px;
+    height: 80px;
+  }
   .rectangle-text {
     font-size: 24px;
     width: 80%;
@@ -342,6 +377,10 @@ body {
   color: #0f111a;
 }
 
+.stack-rectangle-text {
+  width: 30%;
+  color: #0f111a;
+}
 /* The frame for the left vector (logo) */
 .inner-rectangle-left {
   flex-grow: 1;
@@ -367,7 +406,18 @@ body {
   overflow: hidden;
   margin-top: 5%;
 }
-
+.stack-svg {
+  margin-top: 2.5%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.stack-rectangle {
+  margin: auto;
+  display: flex;
+  /*width: 600px;*/
+  background-color: #8f93a2;
+  color: #000000;
+}
 /* Margins for the texts below each rectangle */
 .article {
   margin-top: 15px;
@@ -391,6 +441,11 @@ body {
   width: 64px;
   margin: 2px;
 }
+.iconify-Stack {
+  margin: 2px;
+}
+
+
 
 /* Container for my portfolio/stuff */
 .my-stuff {
@@ -579,4 +634,9 @@ a {
 .six {
   background-color: #0081c6;
   transform: rotate(-300deg);
+}
+
+#htmllogo {
+  position: relative;
+  top: -10%;
 }
