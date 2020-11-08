@@ -451,6 +451,11 @@ body {
 .my-stuff {
   margin-top: 40px;
   color: #8f93a2;
+  /*flex-basis: 50%;*/
+  /*max-height: 100vh;*/
+  overflow-y: scroll;
+  /*border: 1px solid gray;*/
+  scroll-snap-type: y proximity;
 }
 
 /* Styling for the text below each rectangle in the portfolio */
@@ -639,4 +644,26 @@ a {
 #htmllogo {
   position: relative;
   top: -10%;
+}
+
+.proximity {
+  scroll-snap-type: y proximity;
+}
+
+.my-stuff {
+  margin-top: 40px;
+  color: #8f93a2;
+  flex-basis: 50%;
+  max-height: 300px;
+  overflow-y: scroll;
+  /*border: 1px solid gray;*/
+  scroll-snap-type: y mandatory;
+}
+
+.rectangle, .stackArticle{
+  scroll-snap-align: start;
+}
+
+.stackArticle {
+  height: 50%;
 }
