@@ -571,12 +571,16 @@ body {
 
 .flash-item {
   /*font-size: 24px;*/
-  animation: flash 8s linear 0s infinite;
+  /*animation: flash 8s linear 0s infinite;*/
   color: #8f93a2;
-  -webkit-animation: flash 3s linear 0s infinite;
-  -moz-animation: flash 3s linear 0s infinite;
-  animation-delay: 2s;
-  -o-animation: flash 3s linear 0s infinite;
+  /*-webkit-animation: flash 3s linear 0s infinite;*/
+  /*-moz-animation: flash 3s linear 0s infinite;*/
+  /*animation-delay: 2s;*/
+  /*-o-animation: flash 3s linear 0s infinite;*/
+
+  margin-top: 100px;
+  padding-top: 15px;
+  border-top: solid 1px #8f93a2;
 }
 a {
   color: white;
@@ -653,12 +657,12 @@ a {
 .my-stuff {
   margin-top: 40px;
   color: #8f93a2;
-  flex-basis: 50%;
   max-height: 300px;
   overflow-y: scroll;
   /*border: 1px solid gray;*/
   scroll-snap-type: y mandatory;
 }
+
 
 .rectangle, .stackArticle{
   scroll-snap-align: start;
