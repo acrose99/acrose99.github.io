@@ -1,5 +1,9 @@
 /*Galaxy S9+ and Android*/
 @media screen and (min-width: 360px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
   .iconify-Stack  {
     height: 30px;
     width: 40px;
@@ -67,6 +71,10 @@
 
 /*iPhone 6,7,8, X*/
 @media screen and (min-width: 375px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
   .iconify-Stack  {
     height: 30px;
     width: 40px;
@@ -138,6 +146,10 @@
 
 /*iPhone Plus, XS, XS Max */
 @media screen and (min-width: 414px) {
+  .contact {
+  display: flex;
+  flex-direction: column;
+  }
   .iconify-Stack  {
     height: 30px;
     width: 40px;
@@ -213,7 +225,11 @@
 
 /* iPad */
 @media screen and (min-width: 768px) {
-
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
   .iconify-Stack  {
     height: 64px;
     width: 64px;
@@ -288,6 +304,11 @@
 }
 
 @media screen and (min-width: 1000px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
   .rectangle {
     width: 900px;
     height: 80px;
@@ -490,13 +511,18 @@ body {
 }
 
 /* Styling for the bottom contact links */
+.contact {
+  display: flex;
+  margin-top: 50px;
+}
 .list {
   list-style: none;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 14px;
   color: #89DDF7;
+  padding-bottom: 25px;
 }
 
 #reddit {
